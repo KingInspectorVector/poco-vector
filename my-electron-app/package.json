@@ -1,0 +1,19 @@
+{
+  "name": "key",
+  "version": "1.0.0",
+  "description": "Password analyzer",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "key"
+  },
+  "author": "InspectorVector",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.2.2"
+  }
+}
