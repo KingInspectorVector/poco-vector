@@ -13,3 +13,5 @@ app.on('ready', () => {
    // Загрузите вашу HTML-страницу
    mainWindow.loadFile('index.html')
 })
+
+//pull test
