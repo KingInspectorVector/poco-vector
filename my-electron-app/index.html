@@ -4,10 +4,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Electron</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
-	<h1> Welcome to the Electron project!</h1>
+	<h1>Password checker</h1>
+	<h2>Check your password</h2>
+	<p>Your password is not safe if it can be brute-forced or found in a database of leaked passwords.</p>
+
+	<button class="generate-button" id="generateButton">Generate password</button><br>
+	<input type="text" name="passwordField" id="passwordField" placeholder="••••••">
+	<button class="copy-button" id="copyButton">copy</button>
+	<!-- temp --><p id="passwordWrotenByUser"></p>
+	<div id="passwordRequirements">
+		<h3>Minimal requirements to the password:</h3>
+		<p id="minimalPasswordLength">At least 8 characters long</p>
+		<p id="uppercaseRequirement">Contain uppercase</p>
+		<p id="lowercaseRequirement">Contain lowercase</p>
+		<p id="numbersRequirement">Contain numbers</p>
+		<p id="symbolsRequirement">Contain symbols</p>
+		<p id="notRequirement">Doesn't contain rest of the symbols</p>
+	</div>
+
+	<!-- todo list
+		Not a word that can be found in a dictionary or the name of a person, character, product, or organization.
+
+		Significantly different from your previous passwords.
+
+		Easy for you to remember but difficult for others to guess. Consider using a memorable phrase like "6MonkeysRLooking^".
+		/(?(?=[\W_])[^!@#$%^&*()-+=;:,./?|`~{}_]|^$)/
+	-->
+	<div id="toast" class="hidden"></div>
+
+	<script type="text/javascript" src="script.js"></script>
 	
 </body>
 </html>
